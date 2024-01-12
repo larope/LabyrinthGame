@@ -41,16 +41,17 @@ public class MainActivity extends AppCompatActivity {
 
         _playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Log.d("BUTTONS", "PLAY");
                 Intent i = new Intent(MainActivity.this,Levels.class);
                 startActivity(i);
-                Log.d("BUTTONS", "Entered levels menu.");
             }
         });
         _settingsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Log.d("BUTTONS", "NOT PLAY");
+
                 Intent i = new Intent(MainActivity.this,Settings.class);
                 startActivity(i);
-                Log.d("BUTTONS", "Entered settings menu.");
             }
         });
 
